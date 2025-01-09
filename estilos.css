@@ -6,3 +6,27 @@
         font-style: normal;
     
 }
+
+/*Regla 2. El elemento body tendrá margen 0 y relleno de 20% únicamente a la derecha y izquierda*/
+body {
+    margin: 0;
+    padding: 0 20%; 
+}
+
+/*Regla 3. Los elementos h1 estarán subrayados (text-decoration: underline;), de color darkcyan y alineados al centro*/
+h1 {
+    text-decoration: underline;
+    color: darkcyan;
+    text-align: center;
+}
+
+/*Regla 4. Los elementos con clase selector tendrán color lightcyan*/
+.selector {
+    color: lightcyan;
+}
+
+/*Regla 5. Los elementos con clase selectors tendrán un relleno de 5%, un border: solid darkcyan 1px; y esquinas redondeadas border-radius con valor de 5px*/
+.selectors {
+    border: solid darkcyan 1px;
+    border-radius: 5px;
+}
