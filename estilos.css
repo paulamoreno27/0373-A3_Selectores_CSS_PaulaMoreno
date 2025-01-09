@@ -1,0 +1,8 @@
+/* Regla 1: Selector universal (*) para cambiar la fuente del documento */
+* {
+    .combo-regular 
+        font-family: "Combo", serif;
+        font-weight: 400;
+        font-style: normal;
+    
+}
