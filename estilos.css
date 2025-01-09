@@ -39,13 +39,32 @@ h1 {
 
 /*Regla 7. Los elementos h2 con clase selector y los elementos h2 con identificador (id) universal tendrán color de fondo darkcyan, relleno de 1% y esquinas redondeadas con valor de 5px*/
 h2.selector{
-    background-color: darkcyan; /
+    background-color: darkcyan; 
     padding: 1%;              
     border-radius: 5px;
 }
 
-h2 #universal {
-    background-color: darkcyan; /
+h2#universal {
+    background-color: darkcyan; 
     padding: 1%;              
+    border-radius: 5px;
+}
+
+/*Regla 8. Los elementos span tendrán font-weight: 900; color de fondo negro y color de texto blanco*/
+span {
+    font-weight: 900;
+    background-color: black;
+    color: white;
+}
+
+/*Regla 9. Los elementos a que sean hijos directos de algún li tendrán text-decoration: none*/
+li > a {
+    text-decoration: none;
+}
+
+/*Regla 10. Los elementos h3 tendrán color de fondo background-color: rgba(0, 139, 139, 0.529);, relleno de 0.5px y esquinas redondeadas con valor de 5px*/
+h3 {
+    background-color: rgba(0, 139, 139, 0.529);
+    padding: 0.5px;
     border-radius: 5px;
 }
