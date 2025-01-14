@@ -1,9 +1,10 @@
 /* Regla 1: Selector universal (*) para cambiar la fuente del documento */
 * {
-    font-family: "Combo", serif;  /*Establece la fuente Combo para todo el documento*/
-    font-weight: 400;             /*Pone un peso de fuente normal (400) */
-    font-style: normal;           /*Hace que la fuente no será cursiva ni nada de eso*/
-}
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
 
 /*Regla 2. El elemento body tendrá margen 0 y relleno de 20% únicamente a la derecha y izquierda*/
 body {
