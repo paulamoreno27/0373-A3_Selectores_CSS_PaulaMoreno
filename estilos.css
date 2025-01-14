@@ -1,81 +1,81 @@
 /* Regla 1: Selector universal (*) para cambiar la fuente del documento */
 * {
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
+    font-family: "Raleway", serif;  /* Establece la fuente de todo el contenido de la página */
+    font-optical-sizing: auto;      /* Ajusta automáticamente el tamaño de la fuente según el contenido */
+    font-weight: normal;            /* Corrige el valor de font-weight que no estaba definido */
+    font-style: normal;             /* Establece que el estilo de fuente será normal */
+}
 
-/*Regla 2. El elemento body tendrá margen 0 y relleno de 20% únicamente a la derecha y izquierda*/
+/* Regla 2: El elemento body tendrá margen 0 y relleno de 20% únicamente a la derecha y izquierda */
 body {
-    margin: 0;                  /*Elimina el margen predeterminado del body*/
-    padding: 0 20%;             /*Agrega un relleno de 20% en la derecha y en la izquierda*/
+    margin: 0;                     /* Elimina el margen predeterminado del body */
+    padding: 0 20%;                /* Aplica un relleno de 20% en los lados derecho e izquierdo */
 }
 
-/*Regla 3. Los elementos h1 estarán subrayados (text-decoration: underline;), de color darkcyan y alineados al centro*/
+/* Regla 3: Los elementos h1 estarán subrayados, de color darkcyan y alineados al centro */
 h1 {
-    text-decoration: underline;  /*Subraya el texto que sea h1 */
-    color: darkcyan;           /*Pone el color darkcyan al texto*/
-    text-align: center;          /*Centra el texto h1  */
+    text-decoration: underline;    /* Subraya el texto de los h1 */
+    color: darkcyan;               /* Pone color darkcyan al texto de los h1 */
+    text-align: center;            /* Centra el texto dentro de los h1 */
 }
 
-/*Regla 4. Los elementos con clase selector tendrán color lightcyan*/
+/* Regla 4: Los elementos con clase .selector tendrán color lightcyan */
 .selector {
-    color: lightcyan;           /*Pone color al texto lightcyan, a toda la clase selector de color*/
+    color: lightcyan;              /* Aplica color lightcyan a los textos dentro de la clase .selector */
 }
 
-/*Regla 5. Los elementos con clase selectors tendrán un relleno de 5%, un border: solid darkcyan 1px; y esquinas redondeadas border-radius con valor de 5px*/
+/* Regla 5: Los elementos con clase .selectors tendrán relleno, borde y esquinas redondeadas */
 .selectors {
-    padding: 5%;                   /*Agrega un relleno de 5% en la clase selectors*/
-    border: solid darkcyan 1px;  /*Pone un borde de 1px, color darkcyan y estilo sólido*/
-    border-radius: 5px;            /*Redondea las esquinas de los elementos con un radio de 5px*/
+    padding: 5%;                   /* Aplica un relleno de 5% alrededor del contenido */
+    border: solid darkcyan 1px;    /* Aplica un borde de 1px de color darkcyan */
+    border-radius: 5px;            /* Redondea las esquinas con un radio de 5px */
 }
 
-/*Regla 6. Los elementos con identificador (id) universal tendrán color lightgoldenrodyellow*/
+/* Regla 6: Los elementos con id #universal tendrán color lightgoldenrodyellow */
 #universal {
-    color: lightgoldenrodyellow; /*Pone el color lightgoldenrodyellow al texto del id universal*/
+    color: lightgoldenrodyellow;   /* Aplica el color lightgoldenrodyellow al texto del elemento con id "universal" */
 }
 
-/*Regla 7. Los elementos h2 con clase selector y los elementos h2 con identificador (id) universal tendrán color de fondo darkcyan, relleno de 1% y esquinas redondeadas con valor de 5px*/
+/* Regla 7: Los elementos h2 con clase .selector y h2 con id #universal tendrán fondo darkcyan, relleno y esquinas redondeadas */
 h2.selector {
-    background-color: darkcyan; /*Pone el color de fondo darkcyan a los elementos h2 con clase selector*/
-    padding: 1%;                  /*Agrega un relleno de 1% en los h2 de la clase .selector*/
-    border-radius: 5px;           /* Redondea las esquinas de los elementos h2 con un radio de 5px*/
+    background-color: darkcyan;    /* Establece el color de fondo darkcyan */
+    padding: 1%;                   /* Aplica un relleno de 1% alrededor del contenido */
+    border-radius: 5px;            /* Redondea las esquinas con un radio de 5px */
 }
 
 h2#universal {
-    background-color: darkcyan; /*Pone el color de fondo darkcyan a los elementos h2 con clase selector*/
-    padding: 1%;                  /*Agrega un relleno de 1% en los h2 de la clase .selector*/
-    border-radius: 5px;           /* Redondea las esquinas de los elementos h2 con un radio de 5px*/
+    background-color: darkcyan;    /* Establece el color de fondo darkcyan */
+    padding: 1%;                   /* Aplica un relleno de 1% alrededor del contenido */
+    border-radius: 5px;            /* Redondea las esquinas con un radio de 5px */
 }
 
-/*Regla 8. Los elementos span tendrán font-weight: 900; color de fondo negro y color de texto blanco*/
+/* Regla 8: Los elementos span tendrán font-weight 900, color de fondo negro y color de texto blanco */
 span {
-    font-weight: 900;            /*Pone el tipo negrita de letra para los elementos span*/
-    background-color: black;   /*Pone el color de fondo negro a los elementos span*/
-    color: white;              /*Pone el color del texto blanco a los elementos span*/
+    font-weight: 900;              /* Aplica negrita a los elementos span */
+    background-color: black;      /* Aplica color de fondo negro a los elementos span */
+    color: white;                 /* Aplica color blanco al texto dentro de los span */
 }
 
-/*Regla 9. Los elementos a que sean hijos directos de algún li tendrán text-decoration: none*/
+/* Regla 9: Los enlaces <a> hijos directos de <li> tendrán el subrayado eliminado */
 li > a {
-    text-decoration: none;      /*Elimina el subrayado de los enlaces <a> que son hijos directos de <li>*/
+    text-decoration: none;        /* Elimina el subrayado de los enlaces <a> que son hijos directos de <li> */
 }
 
-/*Regla 10. Los elementos h3 tendrán color de fondo background-color: rgba(0, 139, 139, 0.529);, relleno de 0.5px y esquinas redondeadas con valor de 5px*/
+/* Regla 10: Los elementos h3 tendrán un fondo color rgba(0, 139, 139, 0.529), relleno de 0.5px y esquinas redondeadas */
 h3 {
-    background-color: rgba(0, 139, 139, 0.529); /*Pone el color de fondo a los elementos h3*/
-    padding: 0.5px;                               /*Agrega un relleno de 0.5% en los h3*/
-    border-radius: 5px;                           /*Redondea las esquinas de los elementos h3 con un radio de 5px*/
+    background-color: rgba(0, 139, 139, 0.529); /* Aplica color de fondo en formato rgba */
+    padding: 0.5px;                             /* Aplica un relleno de 0.5px alrededor del h3 */
+    border-radius: 5px;                         /* Redondea las esquinas de los h3 con un radio de 5px */
 }
 
-/* Regla 11: Estilo para div que sean descendientes de #gallery */
+/* Regla 11: Los divs dentro del contenedor con id "gallery" ocuparán el 100% del ancho */
 #gallery div {
-    width: 100%; /*Hace que todos los elementos <div> dentro del contenedor con id "gallery" ocupen el 100% del ancho disponible*/
+    width: 100%; /* Los divs dentro de #gallery ocuparán todo el ancho disponible */
 }
 
-/*Regla 12. Los elementos img tendrán un ancho width de 100%, un border: solid darkcyan 1px; y esquinas redondeadas con valor de 5px*/
+/* Regla 12: Las imágenes tendrán un ancho del 100%, borde y esquinas redondeadas */
 img {
-    width: 100%;                   /*Pone el ancho de las imágenes al 100%*/
-    border: solid darkcyan 1px;  /* Pone un borde de 1px de grosor, color "darkcyan" y estilo sólido a las imágenes*/
-    border-radius: 5px;            /*Redondea las esquinas de las imágenes con un radio de 5px*/
+    width: 100%;                   /* Aplica el 100% de ancho a las imágenes */
+    border: solid darkcyan 1px;    /* Aplica un borde de 1px de color darkcyan */
+    border-radius: 5px;            /* Redondea las esquinas de las imágenes con un radio de 5px */
 }
