@@ -2,9 +2,10 @@
 * {
     font-family: "Raleway", serif;  /* Establece la fuente de todo el contenido de la página */
     font-optical-sizing: auto;      /* Ajusta automáticamente el tamaño de la fuente según el contenido */
-    font-weight: normal;            /* Corrige el valor de font-weight que no estaba definido */
+    font-weight: 400;            /* Corrige el valor de font-weight que no estaba definido */
     font-style: normal;             /* Establece que el estilo de fuente será normal */
 }
+
 
 /* Regla 2: El elemento body tendrá margen 0 y relleno de 20% únicamente a la derecha y izquierda */
 body {
